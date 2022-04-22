@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fideledev.github.io/static/css/main.3e79af9f.css",
+    "main.js": "/fideledev.github.io/static/js/main.9f55be07.js",
+    "index.html": "/fideledev.github.io/index.html",
+    "main.3e79af9f.css.map": "/fideledev.github.io/static/css/main.3e79af9f.css.map",
+    "main.9f55be07.js.map": "/fideledev.github.io/static/js/main.9f55be07.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e79af9f.css",
+    "static/js/main.9f55be07.js"
+  ]
+}
