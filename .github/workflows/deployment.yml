@@ -21,14 +21,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Who am I (temp-set)
-        run:|
-          git config --global user.email "${{env.EMAIL}}"
-          git config --global user.name "${{env.NAME}}"
+    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - run: echo "${{env.EMAIL}}"
+    - run: |
+          git config --global user.email "${{env.EMAIL}}"
+          git config --global user.name "${{env.NAME}}"
     - run: npm install
     - run: npm run deploy --if-present
