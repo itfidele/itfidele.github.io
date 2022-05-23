@@ -27,9 +27,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: echo "${{env.EMAIL}}"
+    - run: echo "$EMAIL"
     - run: |
-          git config --global user.email "${{env.EMAIL}}"
-          git config --global user.name "${{env.NAME}}"
+          git config --global user.email "$EMAIL"
+          git config --global user.name "$NAME"
     - run: npm install
     - run: npm run deploy --if-present
