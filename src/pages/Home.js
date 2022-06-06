@@ -9,6 +9,7 @@ const Home =()=>{
 
                 <ul className="flex gap-4">
                     <li className='hidden group-hover:inline-flex'>🛖&nbsp;About</li>
+                    <li className=' hidden group-hover:inline-flex'>🎓&nbsp;Education</li>
                     <li className=' hidden group-hover:inline-flex'>🖲️&nbsp;Projects</li>
                     <li className='hidden group-hover:inline-flex'>☎️&nbsp;Contact</li>
                     <li className='hidden group-hover:inline-flex'>🛠️&nbsp;Tools</li>
