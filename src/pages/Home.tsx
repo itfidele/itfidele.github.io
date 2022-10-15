@@ -4,7 +4,7 @@ import smartagri from "../img/smartagri.png"
 import ebenezeri from "../img/ebenezeri.png"
 import makas_social from "../img/makas_social.png"
 import LinkButton from "../components/LinkButton";
-
+import kinjyambere_farm from '../img/kinjyambere_farm.png'
 
 interface ProjectType{
     website:string,
@@ -37,7 +37,12 @@ const Home:React.FC=()=>{
             website:"Makas Social Network",
             image:makas_social,
             link:"https://django-socialnetwork.herokuapp.com/"
-        }
+        },
+        {
+          website:"Kijyambere Farms & Consulntant",
+          image:kinjyambere_farm,
+          link:"#"
+      }
     ]
 
 
