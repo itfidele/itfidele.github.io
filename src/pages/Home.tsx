@@ -3,7 +3,6 @@ import Section from "../components/Section";
 import smartagri from "../img/smartagri.png"
 import ebenezeri from "../img/ebenezeri.png"
 import makas_social from "../img/makas_social.png"
-import LinkButton from "../components/LinkButton";
 import kinjyambere_farm from '../img/kinjyambere_farm.png'
 
 interface ProjectType{
@@ -54,10 +53,9 @@ const Home:React.FC=()=>{
           <div>
             <ul className='hidden md:inline-flex gap-4'>
               <li><a href="/">Home</a></li>
-              <li><a href="/">About</a></li>
-              
-              <li><a href="/">Projects</a></li>
-              <li><a href="/">Contact</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#tools">Tools</a></li>
               <li>
                 <div className='flex'>
                   {mode?
@@ -79,7 +77,7 @@ const Home:React.FC=()=>{
           </div>
         </div>
 
-        <div className='w-full lg:w-8/12 mx-auto grid grid-cols-1 md:grid-cols-3 md:h-[450px] place-content-center place-items-center p-4' id='jumbotron'>
+        <div id="about" className='w-full lg:w-8/12 mx-auto grid grid-cols-1 md:grid-cols-3 md:h-[450px] place-content-center place-items-center p-4'>
           <div className={mode ? "items-center col-start-1 text-gray-200 font-thin text-md lg:text-lg col-end-3" :"items-center col-start-1 text-gray-800 font-thin text-md lg:text-lg col-end-3"}>
             
             <p className=" first-letter:text-6xl">👋 Hello, I'm <label className="font-bold">Fidele!</label>
@@ -93,7 +91,7 @@ const Home:React.FC=()=>{
         </div>
 
         </div>
-        <Section title='🌐 Projects'>
+        <Section id="projects" title='🌐 Projects'>
             <div className='grid mt-4 gap-4 md:grid-cols-2 lg:grid-cols-3'>
                 {projects.map((project:ProjectType,index:number)=>{
                     return <div key={index} className='w-full relative group hover:cursor-pointer h-[300px] lg:h-48 p-2 items-stretch text-3xl justify-center flex font-thin box-border bg-gray-400'>
@@ -116,7 +114,7 @@ const Home:React.FC=()=>{
         
         </Section>
 
-        <Section title='🔭 Programming I use most'>
+        <Section id="programming" title='🔭 Programming I use most'>
             <div className='w-10/12 py-2 grid text-gray-100 gap-2'>
             <div className='bg-blue-600 w-11/12 h-10 flex justify-center items-center uppercase'>Python&nbsp;95%</div>
             <div className='bg-yellow-800 w-9/12 h-10 flex justify-center items-center uppercase'>Javascript&nbsp;85%</div>
@@ -124,7 +122,7 @@ const Home:React.FC=()=>{
             </div>
         </Section>
 
-        <Section title='🛠 Tools'>
+        <Section id="tools" title='🛠 Tools'>
           <div className="flex py-4 flex-wrap items-center gap-6">
             <img alt="" src='https://static.djangoproject.com/img/logos/django-logo-negative.png' width='80' height='40'/>
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="80" height="40"/> 
