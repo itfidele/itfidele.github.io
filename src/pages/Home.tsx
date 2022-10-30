@@ -82,7 +82,7 @@ const Home:React.FC=()=>{
         <div className='w-full lg:w-8/12 mx-auto grid grid-cols-1 md:grid-cols-3 md:h-[450px] place-content-center place-items-center p-4' id='jumbotron'>
           <div className={mode ? "items-center col-start-1 text-gray-200 font-thin text-md lg:text-lg col-end-3" :"items-center col-start-1 text-gray-800 font-thin text-md lg:text-lg col-end-3"}>
             
-            <p> <span className='text-6xl'>👋</span> Hello, I'm <label className="font-bold">Fidele!</label>
+            <p className=" first-letter:text-6xl">👋 Hello, I'm <label className="font-bold">Fidele!</label>
             &nbsp; A Human first not a <del>robot</del> (interested to code some hardware) &nbsp;🤭 OSS believer 🙌, full stack web and apps developer who enjoys what he does just like playing video games (on my way to make one).</p>
             <br />
             <p>A proven ability to maintain and enhance company applications with the aim of improving operational functionality in line with business requirements.</p>
@@ -93,7 +93,7 @@ const Home:React.FC=()=>{
         </div>
 
         </div>
-        <Section title='Projects'>
+        <Section title='🌐 Projects'>
             <div className='grid mt-4 gap-4 md:grid-cols-2 lg:grid-cols-3'>
                 {projects.map((project:ProjectType,index:number)=>{
                     return <div key={index} className='w-full relative group hover:cursor-pointer h-[300px] lg:h-48 p-2 items-stretch text-3xl justify-center flex font-thin box-border bg-gray-400'>
@@ -116,12 +116,27 @@ const Home:React.FC=()=>{
         
         </Section>
 
-        <Section title='Programming I use most'>
+        <Section title='🔭 Programming I use most'>
             <div className='w-10/12 py-2 grid text-gray-100 gap-2'>
             <div className='bg-blue-600 w-11/12 h-10 flex justify-center items-center uppercase'>Python&nbsp;95%</div>
             <div className='bg-yellow-800 w-9/12 h-10 flex justify-center items-center uppercase'>Javascript&nbsp;85%</div>
             <div className='bg-pink-600 w-7/12 h-10 flex justify-center items-center uppercase'>C++&nbsp;75%</div>
             </div>
+        </Section>
+
+        <Section title='🛠 Tools'>
+          <div className="flex py-4 flex-wrap items-center gap-6">
+            <img alt="" src='https://static.djangoproject.com/img/logos/django-logo-negative.png' width='80' height='40'/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="80" height="40"/> 
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="80" height="40"/>
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="typescript" width="40" height="40"/>
+            <img height="40" width="40" alt="" src="https://drcarmenmartinez.com/wp-content/uploads/2018/08/rasa_logo_horizontal_purple-1.png"></img>
+            <img height="40" alt="" width="40" src="https://chatimize.com/wp-content/uploads/2020/11/botpress-logo.png"/>
+            <img height="40" alt="" width="40" src="https://img.shields.io/badge/-Heroku-430098?style=flat-square&logo=heroku&logoColor=white" />
+            <img height="40" alt="" width="40" src="https://www.docker.com/wp-content/uploads/2022/01/Docker-R-Logo-08-2018-Monochomatic-RGB_Moby-x1.png"/>
+            <img height="40" alt="" width="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"/>
+            <img height="40" width="40" alt="" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png"></img>
+          </div>
         </Section>
 
 
