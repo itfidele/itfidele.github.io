@@ -49,13 +49,14 @@ const Home:React.FC=()=>{
     return (<React.Fragment>
         <div className={mode ? "bg-gray-700 select-none grid" : "bg-gray-50 select-none grid sticky sticky-top "}>
         <div className={mode ? "p-4 flex w-full lg:w-8/12 mx-auto text-gray-200" :"p-4 flex w-full lg:w-8/12 mx-auto text-gray-800"} id="navbar">
-          <div className='flex-1'>Fidele K.Cyisa</div>
+          <div className='flex-1 flex items-center'> <img loading="lazy" src="https://avatars.githubusercontent.com/u/30210556?v=4" className="w-6 md:w-6 h-6 cursor-pointer hover:grayscale grayscale-0 transition-all rounded-full" alt="" />
+&nbsp; Fidele K.Cyisa</div>
           <div>
             <ul className='hidden md:inline-flex gap-4'>
               <li><a href="/">Home</a></li>
               <li><a href="/">About</a></li>
               
-              <li><a href="/">Uses</a></li>
+              <li><a href="/">Projects</a></li>
               <li><a href="/">Contact</a></li>
               <li>
                 <div className='flex'>
@@ -78,24 +79,24 @@ const Home:React.FC=()=>{
           </div>
         </div>
 
-        <div className='w-full lg:w-8/12 mx-auto grid grid-cols-1 md:grid-cols-3 h-64 place-content-center place-items-center p-4' id='jumbotron'>
+        <div className='w-full lg:w-8/12 mx-auto grid grid-cols-1 md:grid-cols-3 md:h-[450px] place-content-center place-items-center p-4' id='jumbotron'>
           <div className={mode ? "items-center col-start-1 text-gray-200 font-thin text-md lg:text-lg col-end-3" :"items-center col-start-1 text-gray-800 font-thin text-md lg:text-lg col-end-3"}>
-            <span className='text-6xl'>👋</span>
-            <span>Hello, I'm <label className="font-bold">Fidele Kirezi Cyisa!</label></span>
-            <span>&nbsp; A Human first not a <del>robot</del> (interested to code some hardware) &nbsp;🤭 OSS believer 🙌, full stack web and apps developer who enjoys what he does just like playing video games (on my way to make one).
-                <br/><br/>
-                A proven ability to maintain and enhance company applications with the aim of improving operational functionality in line with business requirements.</span>
+            
+            <p> <span className='text-6xl'>👋</span> Hello, I'm <label className="font-bold">Fidele Kirezi Cyisa!</label>
+            &nbsp; A Human first not a <del>robot</del> (interested to code some hardware) &nbsp;🤭 OSS believer 🙌, full stack web and apps developer who enjoys what he does just like playing video games (on my way to make one).</p>
+            <br />
+            <p>A proven ability to maintain and enhance company applications with the aim of improving operational functionality in line with business requirements.</p>
           </div>
           <div className="hidden md:flex order-1 justify-center items-center flex-col">
-            <img loading="lazy" src="https://avatars.githubusercontent.com/u/30210556?v=4" className="w-28 md:w-32 hover:grayscale grayscale-0 transition-all rounded-full" alt="" />
+            <img loading="lazy" src="https://avatars.githubusercontent.com/u/30210556?v=4" className="w-28 md:w-32 cursor-pointer hover:grayscale grayscale-0 transition-all rounded-full" alt="" />
           </div>
         </div>
 
         </div>
         <Section title='Projects'>
-            <div className='grid mt-4 gap-4 grid-cols-2 lg:grid-cols-3'>
+            <div className='grid mt-4 gap-4 md:grid-cols-2 lg:grid-cols-3'>
                 {projects.map((project:ProjectType,index:number)=>{
-                    return <div key={index} className='w-full relative group hover:cursor-pointer h-48 p-2 items-stretch text-3xl justify-center flex font-thin box-border bg-gray-400'>
+                    return <div key={index} className='w-full relative group hover:cursor-pointer h-[300px] lg:h-48 p-2 items-stretch text-3xl justify-center flex font-thin box-border bg-gray-400'>
                         <img loading="lazy" src={project.image} alt="" className="object-fit w-full"/>
                         <div className="absolute w-full group-hover:flex p-2 flex-wrap gap-2 top-0 bg-gray-100 h-full hidden transition-all duration-1000 items-center justify-center text-center">
                             <a href={project.link}>{project.website}</a>
@@ -118,7 +119,6 @@ const Home:React.FC=()=>{
         <Section title='Programming I use most'>
             <div className='w-10/12 py-2 grid text-gray-100 gap-2'>
             <div className='bg-blue-600 w-11/12 h-10 flex justify-center items-center uppercase'>Python&nbsp;95%</div>
-            <div className='bg-green-600 w-8/12 h-10 flex justify-center items-center uppercase'>PHP&nbsp;90%</div>
             <div className='bg-yellow-800 w-9/12 h-10 flex justify-center items-center uppercase'>Javascript&nbsp;85%</div>
             <div className='bg-pink-600 w-7/12 h-10 flex justify-center items-center uppercase'>C++&nbsp;75%</div>
             </div>
