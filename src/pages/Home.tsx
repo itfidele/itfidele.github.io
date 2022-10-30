@@ -82,7 +82,7 @@ const Home:React.FC=()=>{
         <div className='w-full lg:w-8/12 mx-auto grid grid-cols-1 md:grid-cols-3 md:h-[450px] place-content-center place-items-center p-4' id='jumbotron'>
           <div className={mode ? "items-center col-start-1 text-gray-200 font-thin text-md lg:text-lg col-end-3" :"items-center col-start-1 text-gray-800 font-thin text-md lg:text-lg col-end-3"}>
             
-            <p> <span className='text-6xl'>👋</span> Hello, I'm <label className="font-bold">Fidele Kirezi Cyisa!</label>
+            <p> <span className='text-6xl'>👋</span> Hello, I'm <label className="font-bold">Fidele!</label>
             &nbsp; A Human first not a <del>robot</del> (interested to code some hardware) &nbsp;🤭 OSS believer 🙌, full stack web and apps developer who enjoys what he does just like playing video games (on my way to make one).</p>
             <br />
             <p>A proven ability to maintain and enhance company applications with the aim of improving operational functionality in line with business requirements.</p>
