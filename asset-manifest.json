@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.469a5c96.css",
-    "main.js": "/static/js/main.87931a75.js",
+    "main.js": "/static/js/main.627ee662.js",
     "static/media/kinjyambere_farm.png": "/static/media/kinjyambere_farm.a90531178f73dfb6a7aa.png",
     "static/media/makas_social.png": "/static/media/makas_social.d330400c4e9441725201.png",
     "static/media/smartagri.png": "/static/media/smartagri.f7afbacceed616b7c751.png",
     "static/media/ebenezeri.png": "/static/media/ebenezeri.e0b4fb91e14e0878b9cb.png",
     "index.html": "/index.html",
     "main.469a5c96.css.map": "/static/css/main.469a5c96.css.map",
-    "main.87931a75.js.map": "/static/js/main.87931a75.js.map"
+    "main.627ee662.js.map": "/static/js/main.627ee662.js.map"
   },
   "entrypoints": [
     "static/css/main.469a5c96.css",
-    "static/js/main.87931a75.js"
+    "static/js/main.627ee662.js"
   ]
 }
