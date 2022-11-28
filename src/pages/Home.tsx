@@ -25,12 +25,14 @@ const Home:React.FC=()=>{
         {
             website:"Smart-Agri",
             image:smartagri,
-            link:"https://smartagri.org"
+            link:"https://smartagri.org",
+            description:"A platform that connects anyone to agricultural opportunities. We aim to help and assist people to find rewarding opportunities in Agriculture."
         },
         {
             website:"Ebenezer Healthcare Access",
             image:ebenezeri,
-            link:"https://ebenezeri.org"
+            link:"https://ebenezeri.org",
+            description:"Ebenezer Healthcare Access is a 501(c) (3) non profit organization based in Dayton Ohio. Ebenezer Healthcare Access helps you overcome language and cultural barriers in accessing healthcare services and other community resources."
         },
         {
             website:"Makas Social Network",
@@ -81,7 +83,7 @@ const Home:React.FC=()=>{
           <div className={mode ? "items-center col-start-1 text-gray-200 font-thin text-md lg:text-lg col-end-3" :"items-center col-start-1 text-gray-800 font-thin text-md lg:text-lg col-end-3"}>
             
             <p className=" first-letter:text-6xl">👋 Hello, I'm <label className="font-bold">Fidele!</label>
-            &nbsp; A Human first not a <del>robot</del> (interested to code some hardware) &nbsp;🤭 OSS believer 🙌, full stack web and apps developer who enjoys what he does just like playing video games (on my way to make one).</p>
+            &nbsp; A Human first not a <del>robot</del> (interested to code some hardware) &nbsp;🤭 OSS believer (<a href="https://github.com/itfidele/FireDM" className="underline">check out this downloader</a>) 🙌, full stack web and apps developer who enjoys what he does, just like playing video games (<a href="https://github.com/itfidele/some_sfml_simple_games" className="underline">on my way to make one</a>).</p>
             <br />
             <p>A proven ability to maintain and enhance company applications with the aim of improving operational functionality in line with business requirements.</p>
           </div>
@@ -98,6 +100,7 @@ const Home:React.FC=()=>{
                         <img loading="lazy" src={project.image} alt="" className="object-fit w-full"/>
                         <div className="absolute w-full group-hover:flex p-2 flex-wrap gap-2 top-0 bg-gray-100 h-full hidden transition-all duration-1000 items-center justify-center text-center">
                             <a href={project.link}>{project.website}</a>
+                            <p className="text-sm line-clamp-3">{ project.description }</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
                             </svg>
