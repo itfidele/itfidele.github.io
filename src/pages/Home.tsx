@@ -1,11 +1,13 @@
 import React, { useState } from "react"
 import Section from "../components/Section";
-import smartagri from "../img/smartagri.png"
-import ebenezeri from "../img/ebenezeri.png"
+import smartagri from "../img/smartagri-screenshot.png"
+import ebenezeri from "../img/ebenezeri-screenshot.png"
 import makas_social from "../img/makas_social.png"
+import agriset_image from "../img/agriset-screenshot.png"
 import kinjyambere_farm from '../img/kinjyambere_farm.png'
 
 interface ProjectType{
+    id:number,
     website:string,
     description?:string,
     link:string,
@@ -23,27 +25,38 @@ const Home:React.FC=()=>{
 
     const projects:ProjectType[] = [
         {
-            website:"Smart-Agri",
-            image:smartagri,
-            link:"https://smartagri.org",
-            description:"A platform that connects anyone to agricultural opportunities. We aim to help and assist people to find rewarding opportunities in Agriculture."
+          id:1,
+          website:"Smart-Agri",
+          image:smartagri,
+          link:"https://smartagri.org",
+          description:"A platform that connects anyone to agricultural opportunities. We aim to help and assist people to find rewarding opportunities in Agriculture."
         },
         {
-            website:"Ebenezer Healthcare Access",
-            image:ebenezeri,
-            link:"https://ebenezeri.org",
-            description:"Ebenezer Healthcare Access is a 501(c) (3) non profit organization based in Dayton Ohio. Ebenezer Healthcare Access helps you overcome language and cultural barriers in accessing healthcare services and other community resources."
+          id:2,
+          website:"Ebenezer Healthcare Access",
+          image:ebenezeri,
+          link:"https://ebenezeri.org",
+          description:"Ebenezer Healthcare Access is a 501(c) (3) non profit organization based in Dayton Ohio. Ebenezer Healthcare Access helps you overcome language and cultural barriers in accessing healthcare services and other community resources."
         },
         {
-            website:"Makas Social Network",
-            image:makas_social,
-            link:"https://django-socialnetwork.herokuapp.com/"
+          id:3,
+          website:"Agriset",
+          image:agriset_image,
+          link:"https://agriset.org",
+          description:"A social organisation that aims to increase the number of role models in Agriculture and related fields. We help and assist people to find decent opportunities in Agriculture and related fields to improve their lives."
         },
-        {
-          website:"Kijyambere Farms & Consulntant",
-          image:kinjyambere_farm,
-          link:"#"
-      }
+        // {
+        //   id:4,
+        //   website:"Makas Social Network",
+        //   image:makas_social,
+        //   link:"https://django-socialnetwork.herokuapp.com/"
+        // },
+        // {
+        //   id:5,
+        //   website:"Kijyambere Farms & Consulntant",
+        //   image:kinjyambere_farm,
+        //   link:"#"
+        // },
     ]
 
 
@@ -95,8 +108,8 @@ const Home:React.FC=()=>{
         </div>
         <Section id="projects" title='🌐 Projects'>
             <div className='grid mt-4 gap-4 md:grid-cols-2 lg:grid-cols-3'>
-                {projects.map((project:ProjectType,index:number)=>{
-                    return <div key={index} className='w-full relative group hover:cursor-pointer h-[300px] lg:h-48 p-2 items-stretch text-3xl justify-center flex font-thin box-border bg-gray-400'>
+                {projects.map((project:ProjectType)=>{
+                    return <div key={project.id} className='w-full relative group hover:cursor-pointer h-[300px] lg:h-48 items-stretch text-3xl justify-center flex font-thin box-border'>
                         <img loading="lazy" src={project.image} alt="" className="object-fit w-full"/>
                         <div className="absolute w-full group-hover:flex p-2 flex-wrap gap-2 top-0 bg-gray-100 h-full hidden transition-all duration-1000 items-center justify-center text-center">
                             <a href={project.link}>{project.website}</a>
@@ -108,10 +121,8 @@ const Home:React.FC=()=>{
                     </div>
                 })}
                 
-                <a href="https://github.com/itfidele" className='w-full h-48 p-2 text-3xl justify-center items-center flex font-thin box-border bg-gray-400'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 text-gray-800 h-16">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
-                    </svg>
+                <a href="https://github.com/itfidele" className='w-full transition-all h-48 hover:bg-white p-2 text-3xl justify-center items-center flex font-thin box-border bg-gray-400'>
+                    <img src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png" alt="" />
                 </a>
             </div>
         
