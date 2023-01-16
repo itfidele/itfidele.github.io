@@ -45,18 +45,18 @@ const Home:React.FC=()=>{
           link:"https://agriset.org",
           description:"A social organisation that aims to increase the number of role models in Agriculture and related fields. We help and assist people to find decent opportunities in Agriculture and related fields to improve their lives."
         },
-        // {
-        //   id:4,
-        //   website:"Makas Social Network",
-        //   image:makas_social,
-        //   link:"https://django-socialnetwork.herokuapp.com/"
-        // },
-        // {
-        //   id:5,
-        //   website:"Kijyambere Farms & Consulntant",
-        //   image:kinjyambere_farm,
-        //   link:"#"
-        // },
+        {
+          id:4,
+          website:"Makas Social Network",
+          image:makas_social,
+          link:"https://django-socialnetwork.herokuapp.com/"
+        },
+        {
+          id:5,
+          website:"Kijyambere Farms & Consulntant",
+          image:kinjyambere_farm,
+          link:"#"
+        },
     ]
 
 
@@ -125,7 +125,6 @@ const Home:React.FC=()=>{
                     <img src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png" alt="" />
                 </a>
             </div>
-        
         </Section>
 
         <Section id="programming" title='🔭 Programming I use most'>
