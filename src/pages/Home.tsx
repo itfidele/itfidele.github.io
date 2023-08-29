@@ -2,9 +2,8 @@ import React, { useState } from "react"
 import Section from "../components/Section";
 import smartagri from "../img/smartagri-screenshot.png"
 import ebenezeri from "../img/ebenezeri-screenshot.png"
-import makas_social from "../img/makas_social.png"
 import agriset_image from "../img/agriset-screenshot.png"
-import kinjyambere_farm from '../img/kinjyambere_farm.png'
+import rnation from "../img/rnation.png"
 
 interface ProjectType {
   id: number,
@@ -25,7 +24,7 @@ const Home: React.FC = () => {
 
   const projects: ProjectType[] = [
     {
-      id: 1,
+      id: 4,
       website: "Smart-Agri",
       image: smartagri,
       link: "https://smartagri.org",
@@ -46,17 +45,12 @@ const Home: React.FC = () => {
       description: "A social organisation that aims to increase the number of role models in Agriculture and related fields. it helps and assist people to find decent opportunities in Agriculture and related fields to improve their lives."
     },
     {
-      id: 4,
-      website: "Makas Social Network",
-      image: makas_social,
-      link: "https://django-socialnetwork.herokuapp.com/"
-    },
-    {
-      id: 5,
-      website: "Kijyambere Farms & Consulntant",
-      image: kinjyambere_farm,
-      link: "#"
-    },
+      id:1,
+      website:"The RNation Entertainment",
+      image:rnation,
+      link:"https://thernation.com/",
+      description:"It is a full-service event planning and management company that specialises in corporate events, conferences, trades shows, and other special events. Our team of experienced event planners work closely with clients to create customized event solutions that meet their unique needs and budget."
+    }
   ]
 
 
@@ -96,7 +90,7 @@ const Home: React.FC = () => {
         <div className={mode ? "items-center col-start-1 text-gray-200 font-thin text-md lg:text-lg col-end-3" : "items-center col-start-1 text-gray-800 font-thin text-md lg:text-lg col-end-3"}>
 
           <p className=" first-letter:text-6xl">👋 Hello, I'm <label className="font-bold">Fidele!</label>
-            &nbsp; A Human first not a <del>robot</del> (interested to code some hardware) &nbsp;🤭 OSS believer (<a href="https://github.com/itfidele/FireDM" className="underline">check out this downloader</a>) 🙌, full stack web and apps developer who enjoys what he does, just like playing video games (<a href="https://github.com/itfidele/some_sfml_simple_games" className="underline">on my way to make one</a>).</p>
+            &nbsp; A Human first not a <del>robot</del> (interested to code some hardware) &nbsp;🤭 OSS believer (<a href="https://github.com/itfidele/FireDM" className="underline">check out this downloader</a>) 🙌, full stack web and apps developer who enjoys what he does.</p>
           <br />
           <p>A proven ability to maintain and enhance company applications with the aim of improving operational functionality in line with business requirements.</p>
         </div>
@@ -106,6 +100,43 @@ const Home: React.FC = () => {
       </div>
 
     </div>
+
+    <Section id="skills" title='🔭 Skills'>
+      <div className='w-[98%] py-2 grid text-gray-100 gap-2'>
+        <div className='bg-blue-600 w-[99%] py-4  h-5 flex justify-between px-6 items-center uppercase'>
+          <div className="flex gap-4 font-bold">
+            <div>🌐</div>
+            <div>Web Development</div>
+          </div>
+          <div>98%</div>
+        </div>
+        
+        <div className='bg-[#2CB7F7] w-[76%] py-4  h-5 flex justify-between px-6 items-center uppercase'>
+          <div className="flex gap-4 font-bold">
+            <div>📱</div>
+            <div>App Development</div>
+          </div>
+          <div>76%</div>
+        </div>
+        <div className='bg-gray-800 w-[67%] py-4  h-5 flex justify-between px-6 items-center uppercase'>
+          <div className="flex gap-4 font-bold">
+            <div>🖥</div>
+            <div>Desktop Development</div>
+          </div>
+          <div>67%</div>
+        </div>
+
+        <div className='bg-amber-600 w-[59%] py-4  h-5 flex justify-between px-6 items-center uppercase'>
+          <div className="flex gap-4 font-bold">
+            <div>🗄</div>
+            <div>Devops</div>
+          </div>
+          <div>59%</div>
+        </div>
+       
+      </div>
+    </Section>
+
     <Section id="projects" title='🌐 Projects'>
       <div className='grid mt-4 gap-4 md:grid-cols-2 lg:grid-cols-3'>
         {projects.map((project: ProjectType) => {
@@ -127,24 +158,19 @@ const Home: React.FC = () => {
       </div>
     </Section>
 
-    <Section id="programming" title='🔭 Programming I use most'>
-      <div className='w-10/12 py-2 grid text-gray-100 gap-2'>
-        <div className='bg-blue-600 w-11/12 h-10 flex justify-center items-center uppercase'>Python&nbsp;95%</div>
-        <div className='bg-yellow-800 w-9/12 h-10 flex justify-center items-center uppercase'>Javascript&nbsp;85%</div>
-        <div className='bg-pink-600 w-7/12 h-10 flex justify-center items-center uppercase'>C++&nbsp;75%</div>
-      </div>
-    </Section>
+    
 
-    <Section id="tools" title='🛠 Tools'>
+    <Section id="tools" title='🛠 Tools & Programming'>
       <div className="flex py-4 flex-wrap items-center gap-6">
         <img alt="" src='https://static.djangoproject.com/img/logos/django-logo-negative.png' width='80' height='40' />
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="80" height="40" />
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="80" height="40" />
         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="typescript" width="40" height="40" />
+        <img src="https://dart.dev/assets/shared/dart-logo-for-shares.png?2" height={40} width={100} alt="" />
+        <img src="" alt="" />
         <img height="40" width="40" alt="" src="https://drcarmenmartinez.com/wp-content/uploads/2018/08/rasa_logo_horizontal_purple-1.png"></img>
         <img height="40" alt="" width="40" src="https://chatimize.com/wp-content/uploads/2020/11/botpress-logo.png" />
         <img height="40" alt="" width="40" src="https://img.shields.io/badge/-Heroku-430098?style=flat-square&logo=heroku&logoColor=white" />
-        <img height="40" alt="" width="40" src="https://www.docker.com/wp-content/uploads/2022/01/Docker-R-Logo-08-2018-Monochomatic-RGB_Moby-x1.png" />
         <img height="40" alt="" width="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
         <img height="40" width="40" alt="" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png"></img>
       </div>
