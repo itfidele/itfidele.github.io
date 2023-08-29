@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.09bf7355.css",
-    "main.js": "/static/js/main.f94ed4bd.js",
-    "static/media/kinjyambere_farm.png": "/static/media/kinjyambere_farm.a90531178f73dfb6a7aa.png",
-    "static/media/makas_social.png": "/static/media/makas_social.d330400c4e9441725201.png",
+    "main.css": "/static/css/main.6429fac0.css",
+    "main.js": "/static/js/main.d9c9706e.js",
+    "static/media/rnation.png": "/static/media/rnation.43fe77095cbff1960eb6.png",
     "static/media/smartagri-screenshot.png": "/static/media/smartagri-screenshot.e72e35485ea13dfb5351.png",
     "static/media/ebenezeri-screenshot.png": "/static/media/ebenezeri-screenshot.6e6eb02915bd02518109.png",
     "static/media/agriset-screenshot.png": "/static/media/agriset-screenshot.cc483e9220aa5b3d457c.png",
     "index.html": "/index.html",
-    "main.09bf7355.css.map": "/static/css/main.09bf7355.css.map",
-    "main.f94ed4bd.js.map": "/static/js/main.f94ed4bd.js.map"
+    "main.6429fac0.css.map": "/static/css/main.6429fac0.css.map",
+    "main.d9c9706e.js.map": "/static/js/main.d9c9706e.js.map"
   },
   "entrypoints": [
-    "static/css/main.09bf7355.css",
-    "static/js/main.f94ed4bd.js"
+    "static/css/main.6429fac0.css",
+    "static/js/main.d9c9706e.js"
   ]
 }
