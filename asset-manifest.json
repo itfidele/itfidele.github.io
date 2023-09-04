@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.6429fac0.css",
-    "main.js": "/static/js/main.d9c9706e.js",
+    "main.js": "/static/js/main.ea7ea85d.js",
     "static/media/rnation.png": "/static/media/rnation.43fe77095cbff1960eb6.png",
     "static/media/smartagri-screenshot.png": "/static/media/smartagri-screenshot.e72e35485ea13dfb5351.png",
     "static/media/ebenezeri-screenshot.png": "/static/media/ebenezeri-screenshot.6e6eb02915bd02518109.png",
     "static/media/agriset-screenshot.png": "/static/media/agriset-screenshot.cc483e9220aa5b3d457c.png",
     "index.html": "/index.html",
     "main.6429fac0.css.map": "/static/css/main.6429fac0.css.map",
-    "main.d9c9706e.js.map": "/static/js/main.d9c9706e.js.map"
+    "main.ea7ea85d.js.map": "/static/js/main.ea7ea85d.js.map"
   },
   "entrypoints": [
     "static/css/main.6429fac0.css",
-    "static/js/main.d9c9706e.js"
+    "static/js/main.ea7ea85d.js"
   ]
 }
