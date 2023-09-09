@@ -34,7 +34,7 @@ const Home: React.FC = () => {
       id: 2,
       website: "Ebenezer Healthcare Access",
       image: ebenezeri,
-      link: "https://ebenezeri.org",
+      link: "https://www.ebenezeri.org",
       description: "Ebenezer Healthcare Access is a 501(c) (3) non profit organization based in Dayton Ohio. Ebenezer Healthcare Access helps you overcome language and cultural barriers in accessing healthcare services and other community resources."
     },
     {
@@ -142,13 +142,13 @@ const Home: React.FC = () => {
         {projects.map((project: ProjectType) => {
           return <div key={project.id} className='w-full relative group hover:cursor-pointer h-[300px] lg:h-48 items-stretch text-3xl justify-center flex font-thin box-border'>
             <img loading="lazy" src={project.image} alt="" className="object-fit w-full" />
-            <div className="absolute w-full group-hover:flex p-2 flex-wrap gap-2 top-0 bg-gray-100 h-full hidden transition-all duration-1000 items-center justify-center text-center">
-              <a href={project.link}>{project.website}</a>
+            <a href={project.link} target="_blank" className="absolute w-full group-hover:flex p-2 flex-wrap gap-2 top-0 bg-gray-100 h-full hidden transition-all duration-1000 items-center justify-center text-center" rel="noreferrer">
+              <div>{project.website}</div>
               <p className="text-sm line-clamp-3">{project.description}</p>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
               </svg>
-            </div>
+            </a>
           </div>
         })}
 
@@ -162,17 +162,26 @@ const Home: React.FC = () => {
 
     <Section id="tools" title='🛠 Tools & Programming'>
       <div className="flex py-4 flex-wrap items-center gap-6">
-        <img alt="" src='https://static.djangoproject.com/img/logos/django-logo-negative.png' width='80' height='40' />
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="80" height="40" />
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="80" height="40" />
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="typescript" width="40" height="40" />
-        <img src="https://dart.dev/assets/shared/dart-logo-for-shares.png?2" height={40} width={100} alt="" />
-        <img src="" alt="" />
-        <img height="40" width="40" alt="" src="https://drcarmenmartinez.com/wp-content/uploads/2018/08/rasa_logo_horizontal_purple-1.png"></img>
-        <img height="40" alt="" width="40" src="https://chatimize.com/wp-content/uploads/2020/11/botpress-logo.png" />
-        <img height="40" alt="" width="40" src="https://img.shields.io/badge/-Heroku-430098?style=flat-square&logo=heroku&logoColor=white" />
-        <img height="40" alt="" width="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
-        <img height="40" width="40" alt="" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png"></img>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" alt="" width='60' height='40' />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="" width='60' height='40' />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" alt="" width='60' height='40'  />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Webysther_20160423_-_Elephpant.svg/2560px-Webysther_20160423_-_Elephpant.svg.png" alt=""  width='60' height='40' />
+        <img src="https://d1uxiwmpc9j4yg.cloudfront.net/images/all/flutter5786_1687632217.jpeg" alt="" width="60" height="40" />
+        <img src="https://www.mlq.ai/content/images/2023/06/Screenshot-2023-06-15-at-8.15.36-PM.png" alt=""  width="60" height="40"  />
+        <img alt="" src='https://cdn.worldvectorlogo.com/logos/django.svg' width='60' height='30' />
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="60" height="40"  alt="" />
+        <img src="https://ionicframework.com/docs/icons/logo-react-icon.png" alt="" width="60" height="40" />
+        <img src="https://assets.stickpng.com/images/5847f40ecef1014c0b5e488a.png" alt="" width="60" height="40" />
+        <img src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png" width="60" height="40" alt="" />
+        <img src="https://allvectorlogo.com/img/2017/02/microsoft-sql-server-logo.png" alt="" width="90" height="40" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Qt_logo_2016.svg/2560px-Qt_logo_2016.svg.png" width="60" height="40" alt="" />
+        <img src="https://orcun-gokbulut.gallerycdn.vsassets.io/extensions/orcun-gokbulut/qml-debug/0.1.0/1645428167537/Microsoft.VisualStudio.Services.Icons.Default" width="60" height="40" alt="" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cmake.svg/1200px-Cmake.svg.png" width="60" height="40"  alt="" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png" width="60" height="40"  alt="" />
+        <img src="https://images.saasworthy.com/rasa_3245_logo_1664877941_se4iq.png" width="60" height="40" alt="" />
+        <img src="https://seeklogo.com/images/D/dialogflow-logo-534FF34238-seeklogo.com.png" width="60" height="40" alt="" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" width="60" height="40" alt="" />
+       
       </div>
     </Section>
 
