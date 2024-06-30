@@ -190,11 +190,11 @@ const Home: React.FC = () => {
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" alt="" width='60' height='40'  />
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Webysther_20160423_-_Elephpant.svg/2560px-Webysther_20160423_-_Elephpant.svg.png" alt=""  width='60' height='40' />
         <img src="https://d1uxiwmpc9j4yg.cloudfront.net/images/all/flutter5786_1687632217.jpeg" alt="" width="60" height="40" />
-        <img src="https://www.mlq.ai/content/images/2023/06/Screenshot-2023-06-15-at-8.15.36-PM.png" alt=""  width="60" height="40"  />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png" alt=""  width="60" height="40"  />
         <img alt="" src='https://cdn.worldvectorlogo.com/logos/django.svg' width='60' height='30' />
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="60" height="40"  alt="" />
         <img src="https://ionicframework.com/docs/icons/logo-react-icon.png" alt="" width="60" height="40" />
-        <img src="https://assets.stickpng.com/images/5847f40ecef1014c0b5e488a.png" alt="" width="60" height="40" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png" alt="" width="60" height="40" />
         <img src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png" width="60" height="40" alt="" />
         <img src="https://allvectorlogo.com/img/2017/02/microsoft-sql-server-logo.png" alt="" width="90" height="40" />
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Qt_logo_2016.svg/2560px-Qt_logo_2016.svg.png" width="60" height="40" alt="" />
