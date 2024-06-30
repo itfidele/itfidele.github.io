@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.6bf83eff.css",
-    "main.js": "/static/js/main.9602e102.js",
+    "main.css": "/static/css/main.8e9cd8f4.css",
+    "main.js": "/static/js/main.d5b6ce66.js",
+    "static/media/stephenspictures.png": "/static/media/stephenspictures.1274028c76eb88a76b68.png",
     "static/media/rnation.png": "/static/media/rnation.43fe77095cbff1960eb6.png",
+    "static/media/ebenezeri.png": "/static/media/ebenezeri.d3c53f500885e408b10d.png",
     "static/media/smartagri-screenshot.png": "/static/media/smartagri-screenshot.e72e35485ea13dfb5351.png",
-    "static/media/ebenezeri-screenshot.png": "/static/media/ebenezeri-screenshot.6e6eb02915bd02518109.png",
-    "static/media/agriset-screenshot.png": "/static/media/agriset-screenshot.cc483e9220aa5b3d457c.png",
+    "static/media/gheinsights.png": "/static/media/gheinsights.25b94634d7ce00755bb9.png",
+    "static/media/hugamara.png": "/static/media/hugamara.c65f97b7d8e69ae4dad8.png",
+    "static/media/agriset-screenshot.png": "/static/media/agriset-screenshot.058fd4240f3c5cd4bbc8.png",
     "index.html": "/index.html",
-    "main.6bf83eff.css.map": "/static/css/main.6bf83eff.css.map",
-    "main.9602e102.js.map": "/static/js/main.9602e102.js.map"
+    "main.8e9cd8f4.css.map": "/static/css/main.8e9cd8f4.css.map",
+    "main.d5b6ce66.js.map": "/static/js/main.d5b6ce66.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bf83eff.css",
-    "static/js/main.9602e102.js"
+    "static/css/main.8e9cd8f4.css",
+    "static/js/main.d5b6ce66.js"
   ]
 }
