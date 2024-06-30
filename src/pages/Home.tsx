@@ -1,10 +1,12 @@
 import React, { useState } from "react"
 import Section from "../components/Section";
 import smartagri from "../img/smartagri-screenshot.png"
-import ebenezeri from "../img/ebenezeri-screenshot.png"
+import ebenezeri from "../img/ebenezeri.png"
 import agriset_image from "../img/agriset-screenshot.png"
 import rnation from "../img/rnation.png"
-
+import hugamaraimg from "../img/hugamara.png"
+import gheinsights from "../img/gheinsights.png"
+import stephenspictures from "../img/stephenspictures.png"
 interface ProjectType {
   id: number,
   website: string,
@@ -50,6 +52,27 @@ const Home: React.FC = () => {
       image:rnation,
       link:"https://thernation.com/",
       description:"It is a full-service event planning and management company that specialises in corporate events, conferences, trades shows, and other special events. Our team of experienced event planners work closely with clients to create customized event solutions that meet their unique needs and budget."
+    },
+    {
+      id:6,
+      website:"GHE Insights Consultanting",
+      image:gheinsights,
+      link:"https://www.ghe-insights.com/",
+      description:"It's a research and communication consultancy specializing in health economics, outcomes research, health technology assessment (HTA), access to medical innovation, and health policy."
+    },
+    {
+      id:8,
+      website:"Stephens Pictures",
+      image:stephenspictures,
+      link:"https://stephenspicturesstudio.com/",
+      description:"Stephens Pictures Studio which is specialize in capturing the essence of life’s most precious moments through our professional photography and videography services."
+    },
+    {
+      id:0,
+      website:"Hugamara",
+      image:hugamaraimg,
+      link:"https://hugamara.com/",
+      description:"Brave minds re-imagining African Innovation"
     }
   ]
 
